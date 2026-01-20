@@ -17,15 +17,23 @@ Target audience
 1. Clone Linux Kernel Source
 ============================
 
-Mainline kernel
----------------
+
+Stable kernel
+-------------
+::
+
+    git clone https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
+    cd linux
+
+Mainline kernel (Maintain by Linus Torvalds)
+--------------------------------------------
 ::
 
     git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
     cd linux
 
-Linux-next (recommended for development)
-----------------------------------------
+Linux-next (Integration of all subsystem maintainer tree)
+---------------------------------------------------------
 ::
 
     git clone https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git

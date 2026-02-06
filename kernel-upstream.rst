@@ -232,7 +232,8 @@ Test email
 ----------
 ::
     
-    echo "test" | git send-email --to yourname@gmail.com
+    echo "Dummy patch for testing" > test.patch
+    git send-email --to yourname@gmail.com test.patch
 
 ------------------------------------------------------------
 

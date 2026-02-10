@@ -39,12 +39,14 @@ Linux-next (Integration of all subsystem maintainer tree)
     git clone https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git
     cd linux-next
 
-Configure author identity (mandatory)
--------------------------------------
+Configure author identity (mandatory) and preferred editor
+----------------------------------------------------------
 ::
 
     git config --global user.name "Your Name"
     git config --global user.email "your.email@gmail.com"
+    git config --global format.signoff "true"
+    git config --global core.editor "vim"
 
 ------------------------------------------------------------
 

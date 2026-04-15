@@ -206,6 +206,17 @@ Usage rule
 - Maintainers → ``--to``
 - Mailing lists → ``--cc``
 
+Generate `git send-email` command using shell
+---------------------------------------------
+::
+
+    echo git send-email \
+    $(scripts/get_maintainer.pl 000*.patch \
+    | sed -n \
+        -e '/maintainer/ s/.*<\(.*\)>.*/--to \1/p' \
+        -e '/open list/ s/.*<\(.*\)>.*/--cc \1/p' \
+        -e '/maintainer/!{/open list/! s/.*<\(.*\)>.*/--cc \1/p}')
+
 ------------------------------------------------------------
 
 8. Configure git send-email (Gmail)

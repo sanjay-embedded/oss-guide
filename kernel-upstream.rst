@@ -307,17 +307,16 @@ Example (v2):
 12. Using b4 (Recommended)
 =========================
 
-Fetch patch series
-------------------
-::
+For Contributors, Reviewers, and Maintainers, please refer to the official **b4 documentation** for detailed usage instructions, workflows, and examples:
 
-    b4 am <message-id>
+👉 https://b4.docs.kernel.org/en/latest/
 
-Prepare next revision
----------------------
-::
+The documentation covers:
 
-    b4 prep --edit cover
+- Fetching and applying patch series  
+- Preparing and revising patch submissions  
+- Review workflows  
+- Maintainer-specific operations  
 
 ------------------------------------------------------------
 

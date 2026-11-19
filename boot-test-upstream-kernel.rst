@@ -185,3 +185,9 @@ Collect runtime information
 - Bootloader behavior may vary across distributions
 - Always keep at least one known-good kernel installed
 - Fedora and other distributions can be added once validated
+
+10. Helper Scripts (`scripts/`)
+===============================
+
+- `scripts/kernel-build.sh`: Configures and compiles an upstream kernel using `/boot/config-$(uname -r)` as a baseline so existing hardware modules continue to work out of the box, then installs modules and the kernel image.
+- `scripts/kernel-clean.sh`: Cleans build artifacts and removes stale test kernel images/modules.
